@@ -10,7 +10,7 @@
 [liberty-skin](https://github.com/librewiki/liberty-skin) → [theseed-skin-liberty](https://github.com/namu-theseed/theseed-skin-liberty) → [openNAMU-Skin-Liberty](https://github.com/openNAMU/openNAMU-Skin-Liberty) → [Liberty-skin](https://github.com/daol-project/Liberty-skin) -> [Vision](https://github.com/Wikive/Vision-Skin)
 
 ## 사용하기
-git으로 받으면 업데이트가 편하기 때문에 git으로 받는 것을 추천한다. 오픈나무 스킨 폴더에서 다음 명령어를 실행하면 된다.
+git으로 받으면 업데이트가 편하기 때문에 git으로 받는 것을 추천한다. 오픈나무 스킨 폴더에서 다음 명령어를 실행하면 된다.<br>
 ```git clone --depth=1 https://github.com/daol-project/Vision-Skin.git vision```
 > [!WARNING]
 > 개발을 위해 clone하는 경우에는 --depth=1 플래그를 붙이면 안 된다. 다음 명령을 사용하자.
