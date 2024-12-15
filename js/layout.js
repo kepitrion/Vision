@@ -46,7 +46,7 @@ function ringo_do_side_button_1() {
         }
         document.getElementById('sidebar-1-list').innerHTML = data;
     }).catch(function(error) {
-        document.getElementById('sidebar-1-item').innerHTML = 'API를 불러오지 못했습니다!';
+        document.getElementById('sidebar-1-item').innerHTML = 'Error: Failed to fetch API.';
     });
 }
 
@@ -63,7 +63,7 @@ function ringo_do_side_button_2() {
         }
         document.getElementById('sidebar-2-list').innerHTML = data;
     }).catch(function(error) {
-        document.getElementById('sidebar-2-item').innerHTML = 'API를 불러오지 못했습니다!';
+        document.getElementById('sidebar-2-item').innerHTML = 'Error: Failed to fetch API.';
     });
 }
 
@@ -80,26 +80,28 @@ function ringo_do_side_button_3() {
         }
         document.getElementById('sidebar-3-list').innerHTML = data;
     }).catch(function(error) {
-        document.getElementById('sidebar-3-item').innerHTML = 'API를 불러오지 못했습니다!';
+        document.getElementById('sidebar-3-item').innerHTML = 'Error: Failed to fetch API.';
     });
 }
 
-ringo_do_side_button_4();
-function ringo_do_side_button_4() {
-    fetch("https://namgall.wikiing.in/api/open_recent_changes").then(function(res) {
-        return res.json();
-    }).then(function(text) {
-        let data = '';
-        for(let for_a = 0; for_a < text.length && for_a < 8; for_a++) {
-            data += '<li><a class="recent-item" href="'+ text[for_a][8] + ringo_do_xss_encode(text[for_a][1]) + '">';
-            data += '<span class="recent-time">' + ringo_do_xss_encode(text[for_a][2].slice(11, -3)) + '</span>';
-            data += '<span class="recent-title">' + "[" + ringo_do_xss_encode(text[for_a][7]) + "] " + ringo_do_xss_encode(text[for_a][1]) + '</span></a></li>';
-        }
-        document.getElementById('sidebar-4-list').innerHTML = data;
-    }).catch(function(error) {
-        document.getElementById('sidebar-4-item').innerHTML = 'API를 불러오지 못했습니다!';
-    });
-}
+
+// 연합 최근 편집이 필요한 경우 다음 줄의 주석을 해제하시기 바랍니다.
+// ringo_do_side_button_4();
+// function ringo_do_side_button_4() {
+//     fetch("https://namgall.wikiing.in/api/open_recent_changes").then(function(res) {
+//         return res.json();
+//     }).then(function(text) {
+//         let data = '';
+//         for(let for_a = 0; for_a < text.length && for_a < 8; for_a++) {
+//             data += '<li><a class="recent-item" href="'+ text[for_a][8] + ringo_do_xss_encode(text[for_a][1]) + '">';
+//             data += '<span class="recent-time">' + ringo_do_xss_encode(text[for_a][2].slice(11, -3)) + '</span>';
+//             data += '<span class="recent-title">' + "[" + ringo_do_xss_encode(text[for_a][7]) + "] " + ringo_do_xss_encode(text[for_a][1]) + '</span></a></li>';
+//         }
+//         document.getElementById('sidebar-4-list').innerHTML = data;
+//     }).catch(function(error) {
+//         document.getElementById('sidebar-4-item').innerHTML = 'Error: Failed to fetch API.';
+//     });
+// }
 
 if(window.location.pathname === '/License') {
     vision_license_1();
