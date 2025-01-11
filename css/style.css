@@ -250,3 +250,7 @@ th[rowspan], td[rowspan] {
 table {
     background-color: transparent;
 }
+
+.katex {
+    line-height: 0;
+}
