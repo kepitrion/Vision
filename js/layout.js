@@ -41,11 +41,11 @@ function ringo_do_side_button_1() {
                 data += '<span class="recent-time">' + ringo_do_xss_encode(text[for_a][2].slice(11, -3)) + '</span>';
                 data += '<span class="recent-title">' + ringo_do_xss_encode(text[for_a][1]) + '</span></a></li>';
             } else {
-                data += '<li>[관리자에 의해 숨겨진 역사입니다!]</li>';
+                data += '<li>[Unavailable Content]</li>';
             }
         }
         document.getElementById('sidebar-1-list').innerHTML = data;
-    }).catch(function(error) {
+    }).catch(function() {
         document.getElementById('sidebar-1-item').innerHTML = 'Error: Failed to fetch API.';
     });
 }
@@ -62,7 +62,7 @@ function ringo_do_side_button_2() {
             data += '<span class="recent-title">' + ringo_do_xss_encode(text[for_a][1]) + '</span></a></li>';
         }
         document.getElementById('sidebar-2-list').innerHTML = data;
-    }).catch(function(error) {
+    }).catch(function() {
         document.getElementById('sidebar-2-item').innerHTML = 'Error: Failed to fetch API.';
     });
 }
@@ -79,7 +79,7 @@ function ringo_do_side_button_3() {
             data += '<span class="recent-title">' + ringo_do_xss_encode(text["data"][for_a]["title"]) + '</span></a></li>';
         }
         document.getElementById('sidebar-3-list').innerHTML = data;
-    }).catch(function(error) {
+    }).catch(function() {
         document.getElementById('sidebar-3-item').innerHTML = 'Error: Failed to fetch API.';
     });
 }
@@ -98,8 +98,8 @@ function ringo_do_side_button_3() {
 //             data += '<span class="recent-title">' + "[" + ringo_do_xss_encode(text[for_a][7]) + "] " + ringo_do_xss_encode(text[for_a][1]) + '</span></a></li>';
 //         }
 //         document.getElementById('sidebar-4-list').innerHTML = data;
-//     }).catch(function(error) {
-//         document.getElementById('sidebar-4-item').innerHTML = 'Error: Failed to fetch API.';
+//     }).catch(function() {
+//         document.getElementById('sidebar-4-item').innerHTML = '[오류] 연합 최근 변경을 불러오는데 실패했습니다.';
 //     });
 // }
 
