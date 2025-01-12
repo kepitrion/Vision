@@ -26,6 +26,8 @@ function vision_user_info() {
             ' (' + ringo_do_url_encode(text['data'][for_a]['exp']) + ' / ' + ringo_do_url_encode(text['data'][for_a]['max_exp']) + ')';
         }
         document.getElementById('sidebar-0-name3').innerHTML = data;
+    }).catch(function() {
+        document.getElementById('sidebar-0-name3').innerHTML = 'Error: Failed to load user information.';
     });
 }
 
