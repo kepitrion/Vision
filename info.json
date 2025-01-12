@@ -1,6 +1,6 @@
 {
     "name" : "Vision",
     "skin_ver" : "v2.12.0",
-    "require_ver" : "20240426",
+    "require_ver" : "20240112",
     "info_link" : "https://raw.githubusercontent.com/kepitrion/Vision/main/info.json"
 }
