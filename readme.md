@@ -1,3 +1,9 @@
+# the tree Vision 개발에 집중하기 위해 이 저장소는 관리되지 않습니다.
+<br>
+<br>
+<br>
+<hr>
+
 ## 개요
 다올위키에서 사용했던 Vision 스킨의 추가 유지보수 버전.
 
@@ -18,4 +24,5 @@ git으로 받으면 업데이트가 편하기 때문에 git으로 받는 것을 
 > ```git clone -b dev https://github.com/kepitrion/Vision.git vision```
 
 추가적인 사항은 [다올위키의 문서](https://wiki.daol.cc/w/%EC%9C%84%ED%82%A4/%EC%8A%A4%ED%82%A8/Vision(%EB%8B%A4%EC%98%AC))를 참고하면 된다.
+
 
